@@ -1,6 +1,6 @@
 ###############################
 # Mau Recode? Sertain author yg buat :v #
-# Author: Latip Harkat | github:Latip176 :v    #
+# Author: Latip Harkat | Recode: Ramdhan Ramadhian :v    #
 ###############################
 
 #import modulenya :v
