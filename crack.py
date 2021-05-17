@@ -196,7 +196,7 @@ class nampung:
 		os.system('clear')
 		print(teman+"\nSubscribe Youtube Ramdhan Ramadhian ID | Stop? CTRL + Z\n")
 		print('[!] Select Methode Crack\n[1]. Methode Mbasic (Medium, some results will successful)\n[2]. Methode Api (Fast, all hit by checkpoints)\n')
-		pi=input("[?] Mau methode mana : ")
+		pi=input("[?] I Choose a Methode : ")
 		time.sleep(1)
 		print("\n[!] Ok save : ok.txt\n[!] Cp save : cp.txt\n")
 		with Bool(max_workers=35) as tokai:
@@ -229,7 +229,7 @@ class nampung:
 		os.system('clear')
 		print(publik+"\nSubscribe Youtube Ramdhan Ramadhian ID | Stop? CTRL + Z\n")
 		print('\n[!] Select Methode Crack\n[1]. Methode Mbasic (Medium, some results will successful)\n[2]. Methode Api (Fast, all hit by checkpoints)\n')
-		pi=input("[?] Mau methode mana : ")
+		pi=input("[?] I Choose a Methode : ")
 		print("")
 		target=input("[?] ID FB target/public : ")
 		try:
