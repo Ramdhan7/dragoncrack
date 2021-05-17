@@ -265,7 +265,7 @@ class nampung:
 					except:pass
 	#menu buat nentuin mau crack apa + methode apa :v
 	def pilihan(self):
-		pilih=input("[?] Pilih yang mana : ")
+		pilih=input("[?] My Choice Is : ")
 		if pilih in ("01","1"):nampung(self.token).sendTeman()
 		elif pilih in ("02","2"):nampung(self.token).sendPublik()
 		elif pilih=="99":
