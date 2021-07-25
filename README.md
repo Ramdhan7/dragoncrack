@@ -7,8 +7,8 @@ $ pkg update && pkg upgrade
 $ pkg install python -y 
 $ pkg install python3 
 $ pkg install git -y
-$ pip2 install requests 
-$ pip2 install mechanize 
+$ pip install requests 
+$ pip install mechanize 
 $ git clone https://github.com/Ramdhan7/dragoncrack
 ````
 ### Run Script :
